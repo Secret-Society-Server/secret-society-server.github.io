@@ -96,6 +96,8 @@ header {
   height: 50vh;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .headerContent {
@@ -147,4 +149,8 @@ header {
 
 .mttInner > h1, .mttInner > p {
   text-align: left;
+}
+
+#heroContent > h1 > .t {
+  text-shadow: 6px 6px 0 black;
 }
