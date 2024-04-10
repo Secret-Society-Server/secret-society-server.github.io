@@ -32,8 +32,9 @@
     <section id="hero">
       <div id="heroContent">
         <h1>
-          <span class="t">Secret Society</span>
-          <br /><span style="text-shadow: 3px 3px 0 black;">No one is safe.</span><br /><br />
+          <span class="t" style="text-shadow: 6px 6px 0 black;">Secret Society</span>
+          <br /><span style="text-shadow: 3px 3px 0 black">No one is safe.</span
+          ><br /><br />
           <button onclick="switchTab('hero', 'gallery')" class="navButton">
             <img src="media/gallery.png" class="navImage" />
           </button>
@@ -106,7 +107,12 @@
       </div>
     </section>
     <section id="gallery" class="inactive">
-      <header style="--bgImg: url(media/galleryHeadImg.png)">
+      <header
+        style="
+          --bgImg: url(media/galleryHeadImg.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+        ">
         <div class="headerContent">
           <h1 class="satisfy" style="text-align: center">
             Gallery<br />
@@ -222,7 +228,12 @@
       </div>
     </section>
     <section id="mtt" class="inactive">
-      <header style="--bgImg: url(media/unknown2.png)">
+      <header
+        style="
+          --bgImg: url(media/unknown2.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+        ">
         <div class="headerContent">
           <h1 class="satisfy" style="text-align: center">
             Meet The Team<br />
