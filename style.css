@@ -2,9 +2,9 @@
 
 :root {
   --color1: #ff6365;
-  --bgColor: #a4008c;
+  --bgColor: #683240;
   --color3: #fd9fa1;
-  --color4: #ffb4e7;
+  --color4: rgba(0,0,0, 0.4);
   --color5: #ffa593;
   --color6: #eac0fc;
 }
@@ -78,11 +78,16 @@ section {
   border-radius: 15px;
   border: 0;
   background-color: var(--color4);
+  box-shadow: 5px 5px 5px 0px black;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .navImage {
-  width: 50px;
-  height: 50px;
+  width: 5vw;
+  height: 5vw;
+  max-width: 150px;
+  max-height: 150px;
 }
 
 header {
