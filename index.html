@@ -1,336 +1,472 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Secret Society</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
-      rel="stylesheet" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"
-      integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-  </head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Secret Society</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="mobile.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+            rel="stylesheet" />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"
+            integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    </head>
 
-  <body>
-    <nav></nav>
-    <section id="hero">
-      <div id="heroContent">
-        <h1>
-          <span class="t" style="text-shadow: 6px 6px 0 black;">Secret Society</span>
-          <br /><span style="text-shadow: 3px 3px 0 black">No one is safe.</span
-          ><br /><br />
-          <button onclick="switchTab('hero', 'gallery')" class="navButton">
-            <img src="media/gallery.png" class="navImage" />
-          </button>
-          <button onclick="switchTab('hero', 'mtt')" class="navButton">
-            <img src="media/mtt.png" class="navImage" />
-          </button>
-          <br />
-          <br />
-          <a
-            href="https://discord.gg/secret-society"
-            class="imgNBB"
-            target="_blank"
-            ><img src="media/discord.png" style="width: 50px; height: 50px"
-          /></a>
-          <a
-            href="https://twitter.com/SecretS0c13ty"
-            class="imgNBB"
-            target="_blank"
-            ><img src="media/twitter.png" style="width: 50px; height: 50px"
-          /></a>
-          <a
-            href="https://www.tiktok.com/@secretsocietyserver"
-            class="imgNBB"
-            target="_blank"
-            ><img src="media/tiktok.png" style="width: 50px; height: 50px"
-          /></a>
-          <a
-            href="https://www.instagram.com/secretsocietyserver/"
-            class="imgNBB"
-            target="_blank"
-            ><img src="media/instagram.png" style="width: 50px; height: 50px"
-          /></a>
-          <a
-            href="https://www.youtube.com/channel/UCwgjb9b3Vp2_30zMNPZaLvQ"
-            class="imgNBB"
-            target="_blank"
-            ><img src="media/youtube.png" style="width: 50px; height: 50px"
-          /></a>
-          <a
-            href="https://www.reddit.com/r/secretsocietyserver0/"
-            class="imgNBB"
-            target="_blank"
-            ><img src="media/reddit.png" style="width: 50px; height: 50px"
-          /></a>
-          <a
-            href="https://www.facebook.com/people/-secret-sciety-/100085611303122/"
-            class="imgNBB"
-            target="_blank"
-            ><img src="media/facebook.png" style="width: 50px; height: 50px"
-          /></a>
-          <a
-            href="https://www.twitch.tv/secretsocietyserver"
-            class="imgNBB"
-            target="_blank"
-            ><img src="media/twitch.png" style="width: 50px; height: 50px"
-          /></a>
-          <a
-            href="https://streamlabs.com/secretsocietyserver/tip"
-            class="imgNBB"
-            target="_blank"
-            ><img src="media/paypal.png" style="width: 50px; height: 50px"
-          /></a>
-          <!-- <button onclick="switchTab('hero', 'about')" class="navButton">
-            <img src="media/partnership.png" class="navImage" />
-          </button>
-          <button onclick="switchTab('hero', 'about')" class="navButton">
+    <body>
+        <section id="hero">
+            <div id="mobileHero">
+                <h1>
+                    <span class="t">Secret Society</span><br /><br />
+                    <button
+                        onclick="switchTab('hero', 'gallery')"
+                        class="navButton">
+                        <img src="media/gallery.png" class="mobNavImage" />
+                    </button>
+                    <button
+                        onclick="switchTab('hero', 'mtt')"
+                        class="navButton">
+                        <img src="media/mtt.png" class="mobNavImage" />
+                    </button>
+                    <button
+                        onclick="switchTab('hero', 'partners')"
+                        class="navButton">
+                        <img src="media/partnership.png" class="mobNavImage" />
+                    </button>
+                </h1>
+            </div>
+            <div id="heroContent">
+                <h1>
+                    <span class="t" style="text-shadow: 6px 6px 0 black"
+                        >Secret Society</span
+                    >
+                    <br /><span style="text-shadow: 3px 3px 0 black"
+                        >No one is safe.</span
+                    ><br /><br />
+                    <button
+                        onclick="switchTab('hero', 'gallery')"
+                        class="navButton">
+                        <img src="media/gallery.png" class="navImage" />
+                    </button>
+                    <button
+                        onclick="switchTab('hero', 'mtt')"
+                        class="navButton">
+                        <img src="media/mtt.png" class="navImage" />
+                    </button>
+                    <button
+                        onclick="switchTab('hero', 'partners')"
+                        class="navButton">
+                        <img src="media/partnership.png" class="navImage" />
+                    </button>
+                    <br />
+                    <br />
+                    <a
+                        href="https://discord.gg/secret-society"
+                        class="imgNBB"
+                        target="_blank"
+                        ><img
+                            src="media/discord.png"
+                            style="width: 50px; height: 50px"
+                    /></a>
+                    <a
+                        href="https://twitter.com/SecretS0c13ty"
+                        class="imgNBB"
+                        target="_blank"
+                        ><img
+                            src="media/twitter.png"
+                            style="width: 50px; height: 50px"
+                    /></a>
+                    <a
+                        href="https://www.tiktok.com/@secretsocietyserver"
+                        class="imgNBB"
+                        target="_blank"
+                        ><img
+                            src="media/tiktok.png"
+                            style="width: 50px; height: 50px"
+                    /></a>
+                    <a
+                        href="https://www.instagram.com/secretsocietyserver/"
+                        class="imgNBB"
+                        target="_blank"
+                        ><img
+                            src="media/instagram.png"
+                            style="width: 50px; height: 50px"
+                    /></a>
+                    <a
+                        href="https://www.youtube.com/channel/UCwgjb9b3Vp2_30zMNPZaLvQ"
+                        class="imgNBB"
+                        target="_blank"
+                        ><img
+                            src="media/youtube.png"
+                            style="width: 50px; height: 50px"
+                    /></a>
+                    <a
+                        href="https://www.reddit.com/r/secretsocietyserver0/"
+                        class="imgNBB"
+                        target="_blank"
+                        ><img
+                            src="media/reddit.png"
+                            style="width: 50px; height: 50px"
+                    /></a>
+                    <a
+                        href="https://www.facebook.com/people/-secret-sciety-/100085611303122/"
+                        class="imgNBB"
+                        target="_blank"
+                        ><img
+                            src="media/facebook.png"
+                            style="width: 50px; height: 50px"
+                    /></a>
+                    <a
+                        href="https://www.twitch.tv/secretsocietyserver"
+                        class="imgNBB"
+                        target="_blank"
+                        ><img
+                            src="media/twitch.png"
+                            style="width: 50px; height: 50px"
+                    /></a>
+                    <a
+                        href="https://streamlabs.com/secretsocietyserver/tip"
+                        class="imgNBB"
+                        target="_blank"
+                        ><img
+                            src="media/paypal.png"
+                            style="width: 50px; height: 50px"
+                    /></a>
+
+                    <!-- <button onclick="switchTab('hero', 'about')" class="navButton">
             <img src="media/paypal.png" class="navImage" />
           </button> -->
-        </h1>
-      </div>
-    </section>
-    <section id="gallery" class="inactive">
-      <header
-        style="
-          --bgImg: url(media/galleryHeadImg.png);
-          background-repeat: no-repeat;
-          background-size: cover;
-        ">
-        <div class="headerContent">
-          <h1 class="satisfy" style="text-align: center">
-            Gallery<br />
-            <button onclick="switchTab('gallery', 'hero')" class="navButton">
-              <img src="media/home.png" class="navImage" />
-            </button>
-          </h1>
-        </div>
-      </header>
-      <div class="galleryImgs">
-        <div class="galleryImg">
-          <img src="media/IMG_3432.png" width="70%" draggable="false" />
-          <p>By biyoo on Discord</p>
-        </div>
-        <div class="galleryImg">
-          <img src="media/nvuWOeh.jpg" width="70%" draggable="false" />
-          <p>
-            By kingsoobin on Discord <br />
-            <a href="https://www.instagram.com/soobinarts/">Instagram</a> <br />
-            <a href="https://soobinarts.carrd.co/">Carrd.io</a>
-          </p>
-        </div>
-        <div class="galleryImg">
-          <img src="media/Illustration2.png" width="70%" draggable="false" />
-          <p>
-            By rogunsou on Discord<br />RAIT VW<br />
-            <a href="https://www.deviantart.com/raitvisualworks"
-              >RAIT VW'S DeviantArt</a
-            >
-          </p>
-        </div>
-        <div class="galleryImg">
-          <img src="media/firstcommv2.png" width="70%" draggable="false" />
-          <p>
-            By bonatoo on Discord <br />
-            <a href="https://www.instagram.com/bonato_owo/">Instagram</a>
-          </p>
-        </div>
-        <div class="galleryImg">
-          <img src="media/unknown.png" width="70%" draggable="false" />
-          <p>By avengineering on Discord</p>
-        </div>
-        <div class="galleryImg">
-          <img src="media/Jpg.jpg" width="70%" draggable="false" />
-          <p>
-            By mr_heisenberg9349 on Discord<br /><a
-              href="https://nextcenturydesigns.com/"
-              >Next Century Designs</a
-            >
-          </p>
-        </div>
-        <div class="galleryImg">
-          <img
-            src="media/secret_society_spirit_banner.png"
-            width="70%"
-            draggable="false" />
-          <p>
-            By zelviaeh on Discord <br />
-            <a href="https://www.instagram.com/zelviaeh/">Instagram</a>
-          </p>
-        </div>
-        <div class="galleryImg">
-          <img src="media/Fawn_Commission.png" width="70%" draggable="false" />
-          <p>By bones6329 on Discord</p>
-        </div>
-        <div class="galleryImg">
-          <img src="media/fullpicture.png" width="70%" draggable="false" />
-          <p>
-            By kido8897 on Discord<br /><a
-              href="https://www.deviantart.com/fanartbr"
-              >DeviantArt</a
-            ><br /><a href="https://www.behance.net/tellesdemouraart">Behance</a
-            ><br />cyberwolfzine@gmail.com
-          </p>
-        </div>
-        <div class="galleryImg">
-          <img src="media/unknown2.png" width="70%" draggable="false" />
-          <p>By bepoopie on Discord</p>
-        </div>
-        <div class="galleryImg">
-          <img src="media/2162.png" width="70%" draggable="false" />
-          <p>
-            By lazybuns on Discord <br /><a
-              href="https://www.instagram.com/lazybunsart"
-              >Instagram</a
-            ><br />
-            <a href="https://ayebuns.carrd.co/#">Carrd.io</a> <br /><a
-              href="https://twitter.com/Lazy1Buns"
-              >Twitter</a
-            >
-          </p>
-        </div>
-        <div class="galleryImg">
-          <img src="media/preview.png" width="70%" draggable="false" />
-          <p>
-            By amy_mth on Discord <br />
-            <a href="https://twitter.com/Amelia_osment">Twitter</a>
-          </p>
-        </div>
-        <div class="galleryImg">
-          <img src="media/unknown3.png" width="70%" draggable="false" />
-          <p>
-            By marlonnn on Discord<br /><a
-              href="https://twitter.com/sleepingmarlon2"
-              >Twitter</a
-            ><br /><a href="https://www.facebook.com/tngkbmarlon">Facebook</a
-            ><br /><a href="https://www.reddit.com/user/sleepingmarlons2"
-              >Reddit</a
-            >
-          </p>
-        </div>
-        <br />
-      </div>
-    </section>
-    <section id="mtt" class="inactive">
-      <header
-        style="
-          --bgImg: url(media/unknown2.png);
-          background-repeat: no-repeat;
-          background-size: cover;
-        ">
-        <div class="headerContent">
-          <h1 class="satisfy" style="text-align: center">
-            Meet The Team<br />
-            <button onclick="switchTab('mtt', 'hero')" class="navButton">
-              <img src="media/home.png" class="navImage" />
-            </button>
-          </h1>
-        </div>
-      </header>
-      <div id="mttCards" style="padding: 25px">
-        <div
-          class="mttCard"
-          style="
-            padding: 55px;
-            border: 3px solid rgba(0, 0, 0, 0.3);
-            margin: 25px;
-            border-radius: 10px;
-            background: rgba(0, 0, 0, 0.3);
-          ">
-          <div
-            class="mttInner"
-            style="width: 100%; height: 100%; text-align: center">
-            <img
-              src="media/fawn.png"
-              class="mttcImg"
-              style="width: 30vw; border-radius: 25px" />
-            <h1>Fawn</h1>
-            <p>
-              I'm Fawn, the owner and founder of Secret Society.<br />
-              What would you do if there was nowhere in the world for you to
-              belong?<br />
-              I struggled with this all my life, until I finally decided that if
-              I could not be accepted in any community,<br />
-              then I would make my own. I invite you to join, express yourself,
-              and see what happens!<br />
-              Typically, I am busy gaming, studying, or working on projects and
-              other developments for SƧ.
-            </p>
-          </div>
-        </div>
-        <div
-          class="mttCard"
-          style="
-            padding: 55px;
-            border: 3px solid rgba(0, 0, 0, 0.3);
-            margin: 25px;
-            border-radius: 10px;
-            background: rgba(0, 0, 0, 0.3);
-          ">
-          <div
-            class="mttInner"
-            style="width: 100%; height: 100%; text-align: center">
-            <img
-              src="media/kioku.png"
-              class="mttcImg"
-              style="width: 30vw; border-radius: 25px" />
-            <h1>Kioku</h1>
-            <p>
-              Sometimes it's nice to just take a break and relax.<br />
-              I'm Kioku, and if you're looking to chill and hangout, come find
-              me! I enjoy playing games and meeting new people. I'm a Content
-              Creator and Moderator for SƧ.
-            </p>
-          </div>
-        </div>
-        <div
-          class="mttCard"
-          style="
-            padding: 55px;
-            border: 3px solid rgba(0, 0, 0, 0.3);
-            margin: 25px;
-            border-radius: 10px;
-            background: rgba(0, 0, 0, 0.3);
-          ">
-          <div
-            class="mttInner"
-            style="width: 100%; height: 100%; text-align: center">
-            <img
-              src="media/softtofu.png"
-              class="mttcImg"
-              style="width: 30vw; border-radius: 25px" />
-            <h1>Soft Tofu</h1>
-            <p>
-              The alignment of the stars and the frequencies of my crystals have
-              foretold your arrival.<br />
-              Hi! I tell stories and ramble for hours on end to help people
-              struggling with life problems. If this resonates with you, look no
-              further.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="script.js"></script>
-  </body>
+                </h1>
+            </div>
+        </section>
+        <section id="gallery" class="inactive">
+            <header
+                style="
+                    --bgImg: url(media/galleryHeadImg.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                ">
+                <div class="headerContent">
+                    <h1 class="satisfy" style="text-align: center">
+                        Gallery<br />
+                        <button
+                            onclick="switchTab('gallery', 'hero')"
+                            class="navButton">
+                            <img src="media/home.png" class="navImage" />
+                        </button>
+                    </h1>
+                </div>
+            </header>
+            <div class="galleryImgs">
+                <div class="galleryImg">
+                    <img
+                        src="media/IMG_3432.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>By biyoo on Discord</p>
+                </div>
+                <div class="galleryImg">
+                    <img
+                        src="media/nvuWOeh.jpg"
+                        width="70%"
+                        draggable="false" />
+                    <p>
+                        By kingsoobin on Discord <br />
+                        <a href="https://www.instagram.com/soobinarts/"
+                            >Instagram</a
+                        >
+                        <br />
+                        <a href="https://soobinarts.carrd.co/">Carrd.io</a>
+                    </p>
+                </div>
+                <div class="galleryImg">
+                    <img
+                        src="media/Illustration2.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>
+                        By rogunsou on Discord<br />RAIT VW<br />
+                        <a href="https://www.deviantart.com/raitvisualworks"
+                            >RAIT VW'S DeviantArt</a
+                        >
+                    </p>
+                </div>
+                <div class="galleryImg">
+                    <img
+                        src="media/firstcommv2.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>
+                        By bonatoo on Discord <br />
+                        <a href="https://www.instagram.com/bonato_owo/"
+                            >Instagram</a
+                        >
+                    </p>
+                </div>
+                <div class="galleryImg">
+                    <img
+                        src="media/unknown.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>By avengineering on Discord</p>
+                </div>
+                <div class="galleryImg">
+                    <img src="media/Jpg.jpg" width="70%" draggable="false" />
+                    <p>
+                        By mr_heisenberg9349 on Discord<br /><a
+                            href="https://nextcenturydesigns.com/"
+                            >Next Century Designs</a
+                        >
+                    </p>
+                </div>
+                <div class="galleryImg">
+                    <img
+                        src="media/secret_society_spirit_banner.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>
+                        By zelviaeh on Discord <br />
+                        <a href="https://www.instagram.com/zelviaeh/"
+                            >Instagram</a
+                        >
+                    </p>
+                </div>
+                <div class="galleryImg">
+                    <img
+                        src="media/Fawn_Commission.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>By bones6329 on Discord</p>
+                </div>
+                <div class="galleryImg">
+                    <img
+                        src="media/fullpicture.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>
+                        By kido8897 on Discord<br /><a
+                            href="https://www.deviantart.com/fanartbr"
+                            >DeviantArt</a
+                        ><br /><a
+                            href="https://www.behance.net/tellesdemouraart"
+                            >Behance</a
+                        ><br />cyberwolfzine@gmail.com
+                    </p>
+                </div>
+                <div class="galleryImg">
+                    <img
+                        src="media/unknown2.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>By bepoopie on Discord</p>
+                </div>
+                <div class="galleryImg">
+                    <img src="media/2162.png" width="70%" draggable="false" />
+                    <p>
+                        By lazybuns on Discord <br /><a
+                            href="https://www.instagram.com/lazybunsart"
+                            >Instagram</a
+                        ><br />
+                        <a href="https://ayebuns.carrd.co/#">Carrd.io</a>
+                        <br /><a href="https://twitter.com/Lazy1Buns"
+                            >Twitter</a
+                        >
+                    </p>
+                </div>
+                <div class="galleryImg">
+                    <img
+                        src="media/preview.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>
+                        By amy_mth on Discord <br />
+                        <a href="https://twitter.com/Amelia_osment">Twitter</a>
+                    </p>
+                </div>
+                <div class="galleryImg">
+                    <img
+                        src="media/unknown3.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>
+                        By marlonnn on Discord<br /><a
+                            href="https://twitter.com/sleepingmarlon2"
+                            >Twitter</a
+                        ><br /><a href="https://www.facebook.com/tngkbmarlon"
+                            >Facebook</a
+                        ><br /><a
+                            href="https://www.reddit.com/user/sleepingmarlons2"
+                            >Reddit</a
+                        >
+                    </p>
+                </div>
+                <br />
+            </div>
+        </section>
+        <section id="mtt" class="inactive">
+            <header
+                style="
+                    --bgImg: url(media/unknown2.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                ">
+                <div class="headerContent">
+                    <h1 class="satisfy" style="text-align: center">
+                        Meet The Team<br />
+                        <button
+                            onclick="switchTab('mtt', 'hero')"
+                            class="navButton">
+                            <img src="media/home.png" class="navImage" />
+                        </button>
+                    </h1>
+                </div>
+            </header>
+            <div id="mttCards" style="padding: 25px">
+                <div
+                    class="mttCard"
+                    style="
+                        padding: 55px;
+                        border: 3px solid rgba(0, 0, 0, 0.3);
+                        margin: 25px;
+                        border-radius: 10px;
+                        background: rgba(0, 0, 0, 0.3);
+                    ">
+                    <div
+                        class="mttInner"
+                        style="width: 100%; height: 100%; text-align: center">
+                        <img
+                            src="media/fawn.png"
+                            class="mttcImg"
+                            style="width: 30vw; border-radius: 25px" />
+                        <h1>Fawn</h1>
+                        <p>
+                            I'm Fawn, the owner and founder of Secret
+                            Society.<br />
+                            What would you do if there was nowhere in the world
+                            for you to belong?<br />
+                            I struggled with this all my life, until I finally
+                            decided that if I could not be accepted in any
+                            community,<br />
+                            then I would make my own. I invite you to join,
+                            express yourself, and see what happens!<br />
+                            Typically, I am busy gaming, studying, or working on
+                            projects and other developments for SƧ.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="mttCard"
+                    style="
+                        padding: 55px;
+                        border: 3px solid rgba(0, 0, 0, 0.3);
+                        margin: 25px;
+                        border-radius: 10px;
+                        background: rgba(0, 0, 0, 0.3);
+                    ">
+                    <div
+                        class="mttInner"
+                        style="width: 100%; height: 100%; text-align: center">
+                        <img
+                            src="media/kioku.png"
+                            class="mttcImg"
+                            style="width: 30vw; border-radius: 25px" />
+                        <h1>Kioku</h1>
+                        <p>
+                            Sometimes it's nice to just take a break and
+                            relax.<br />
+                            I'm Kioku, and if you're looking to chill and
+                            hangout, come find me! I enjoy playing games and
+                            meeting new people. I'm a Content Creator and
+                            Moderator for SƧ.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="mttCard"
+                    style="
+                        padding: 55px;
+                        border: 3px solid rgba(0, 0, 0, 0.3);
+                        margin: 25px;
+                        border-radius: 10px;
+                        background: rgba(0, 0, 0, 0.3);
+                    ">
+                    <div
+                        class="mttInner"
+                        style="width: 100%; height: 100%; text-align: center">
+                        <img
+                            src="media/softtofu.png"
+                            class="mttcImg"
+                            style="width: 30vw; border-radius: 25px" />
+                        <h1>Soft Tofu</h1>
+                        <p>
+                            The alignment of the stars and the frequencies of my
+                            crystals have foretold your arrival.<br />
+                            Hi! I tell stories and ramble for hours on end to
+                            help people struggling with life problems. If this
+                            resonates with you, look no further.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="partners" class="inactive">
+            <header
+                id="partnerHeader"
+                style="background-repeat: no-repeat; background-size: cover">
+                <div class="headerContent">
+                    <h1 class="satisfy" style="text-align: center">
+                        Partnerships<br />
+                        <button
+                            onclick="switchTab('partners', 'hero')"
+                            class="navButton">
+                            <img src="media/home.png" class="navImage" />
+                        </button>
+                    </h1>
+                </div>
+            </header>
+            <div class="partnerCard">
+                <h1>Deer</h1>
+                <p>
+                    Artist<br /><br />
+                    Secret Society's first partner was with Deer. Deer is a<br />
+                    highly skilled European artist who is experienced with<br />
+                    drawing ponies, humans, video game characters, and more!<br /><br />
+                    Words from Deer:<br />
+                    Hi everyone! I'm Deer and I'm an artist! I've been drawing
+                    since I was 12 and I'm really passionate about tattooing,
+                    lifting and of course drawing! My commissions are open and
+                    my work is best suited for those looking to get art of
+                    humans, simple furries and ponies! I'm also good at
+                    humanoids! Or come on over into my Discord just to have a
+                    chat, I'm always happy to answer any questions you may have!
+                    You can contact me on Discord or find me here:<br /><br />
+                    <a
+                        class="instagram-text"
+                        href="https://www.instagram.com/artwithdeer"
+                        >https://www.instagram.com/artwithdeer/</a
+                    ><br />Discord: deersenpai
+                </p>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="script.js"></script>
+    </body>
 </html>

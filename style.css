@@ -1,113 +1,116 @@
 /* DEFAULT */
-
 :root {
-  --color1: #ff6365;
-  --bgColor: #683240;
-  --color3: #fd9fa1;
-  --color4: rgba(0,0,0, 0.4);
-  --color5: #ffa593;
-  --color6: #eac0fc;
+    --color1: #ff6365;
+    --bgColor: #683240;
+    --color3: #fd9fa1;
+    --color4: rgba(0, 0, 0, 0.4);
+    --color5: #ffa593;
+    --color6: #eac0fc;
 }
 
 html,
 body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  scroll-behavior: smooth;
-  white-space: no-wrap;
-  background-color: var(--bgColor);
-  color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    white-space: no-wrap;
+    background-color: var(--bgColor);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
 }
 
 .t {
-  font-size: 8vw;
+    font-size: 8vw;
 }
 
 .inline {
-  display: inline-block;
+    display: inline-block;
 }
 
 #hero {
-  height: 100vh;
-  background-color: var(--color3);
-  background-image: url(media/effect0.gif);
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* position: relative; */
+    height: 100vh;
+    background-color: var(--color3);
+    background-image: url(media/effect0.gif);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
 }
 
 #heroContent {
-  /* position: absolute; */
-  backdrop-filter: blur(5px);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    /* position: absolute; */
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #heroContent > h1 {
-  margin-right: 40vw;
-  font-weight: 400;
+    font-weight: 400;
 }
 
 #heroContent > h1 > span.t {
+  margin-right: min(px, 40vw);
   font-weight: 700;
 }
 
+
+
 section {
-  opacity: initial;
-  transition: opacity 500ms;
+    opacity: initial;
+    transition: opacity 500ms;
 }
 
 .inactive {
-  display: none;
-  opacity: 0;
+    display: none;
+    opacity: 0;
 }
 
 .navButton {
-  padding: 1vw;
-  font-size: 1.3vw;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  border-radius: 15px;
-  border: 0;
-  background-color: var(--color4);
-  box-shadow: 5px 5px 5px 0px black;
-  margin-left: 25px;
-  margin-right: 25px;
+    padding: 1vw;
+    font-size: 1.3vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    border-radius: 15px;
+    border: 0;
+    background-color: var(--color4);
+    box-shadow: 5px 5px 5px 0px black;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .navImage {
-  width: 5vw;
-  height: 5vw;
-  max-width: 150px;
-  max-height: 150px;
+    width: 5vw;
+    height: 5vw;
+    max-width: 150px;
+    max-height: 150px;
 }
 
 header {
-  background-image: var(--bgImg);
-  display: flex;
-  height: 50vh;
-  justify-content: center;
-  align-items: center;
+    background-image: var(--bgImg);
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .headerContent {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  background-size: 400% 400%;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(15px);
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-size: 400% 400%;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
 
-  /* -webkit-box-shadow: inset 0px 0px 46px 10px var(--bgColor);
+    /* -webkit-box-shadow: inset 0px 0px 46px 10px var(--bgColor);
   -moz-box-shadow: inset 0px 0px 46px 10px var(--bgColor);
   box-shadow: inset 0px 0px 46px 10px var(--bgColor); */
 }
@@ -135,16 +138,56 @@ header {
 }
 
 .galleryImg > img {
-  border-radius: 25px;
-  width: 40vw;
+    border-radius: 25px;
+    width: 40vw;
 }
 
 .galleryImg > p > a {
-  color: var(--color6);
-  text-decoration: none;
-  font-weight: 650;
+    color: var(--color6);
+    text-decoration: none;
+    font-weight: 650;
 }
 
-.mttInner > h1, .mttInner > p {
-  text-align: left;
+.mttInner > h1,
+.mttInner > p {
+    text-align: left;
+}
+
+#partnerHeader {
+    background: none;
+    transition: background 500ms ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.partnerCard {
+    padding: 55px;
+    margin: 25px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.instagram-text {
+    background: linear-gradient(
+        to right,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%,
+        #fdf497 100%
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
 }
