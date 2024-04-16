@@ -49,6 +49,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 #heroContent > h1 {
@@ -84,6 +85,7 @@ section {
     box-shadow: 5px 5px 5px 0px black;
     margin-left: 25px;
     margin-right: 25px;
+    transition: box-shadow 100ms;
 }
 
 .navImage {
@@ -190,4 +192,48 @@ header {
     to {
         background-position: 200% center;
     }
+}
+
+.navButton:active {
+    box-shadow: none;
+}
+
+#scene {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scene > #divA {
+    width: 50%;
+    height: 50%;
+    border-radius: 25px;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scene > div > .galleryImg {
+    position: absolute;
+    display: none;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#scene > div > .galleryImg > img {
+    width: 20vw;
+    position: relative;
+}
+
+#scene > div > .galleryImg:nth-child(1) {
+    position: absolute;
+    display: block;
+}
+
+#nextButton {
+    position: fixed;
 }

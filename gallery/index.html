@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Template</title>
+        <link href="../style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    </head>
+
+    <body>
+        <button id="nextButton" onclick="nextImage()">></button>
+        <div id="scene">
+            <div data-depth="0.2" id="divA">
+                <div class="galleryImg" data-index="1">
+                    <img
+                        src="../media/IMG_3432.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>By biyoo on Discord</p>
+                </div>
+                <div class="galleryImg" data-index="2">
+                    <img
+                        src="../media/nvuWOeh.jpg"
+                        width="70%"
+                        draggable="false" />
+                    <p>
+                        By kingsoobin on Discord <br />
+                        <a href="https://www.instagram.com/soobinarts/"
+                            >Instagram</a
+                        >
+                        <br />
+                        <a href="https://soobinarts.carrd.co/">Carrd.io</a>
+                    </p>
+                </div>
+                <div class="galleryImg" data-index="3">
+                    <img
+                        src="../media/Illustration2.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>
+                        By rogunsou on Discord<br />RAIT VW<br />
+                        <a href="https://www.deviantart.com/raitvisualworks"
+                            >RAIT VW'S DeviantArt</a
+                        >
+                    </p>
+                </div>
+                <div class="galleryImg" data-index="4">
+                    <img
+                        src="../media/firstcommv2.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>
+                        By bonatoo on Discord <br />
+                        <a href="https://www.instagram.com/bonato_owo/"
+                            >Instagram</a
+                        >
+                    </p>
+                </div>
+                <div class="galleryImg" data-index="5">
+                    <img
+                        src="../media/unknown.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>By avengineering on Discord</p>
+                </div>
+                <div class="galleryImg" data-index="6">
+                    <img src="../media/Jpg.jpg" width="70%" draggable="false" />
+                    <p>
+                        By mr_heisenberg9349 on Discord<br /><a
+                            href="https://nextcenturydesigns.com/"
+                            >Next Century Designs</a
+                        >
+                    </p>
+                </div>
+                <div class="galleryImg" data-index="7">
+                    <img
+                        src="../media/secret_society_spirit_banner.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>
+                        By zelviaeh on Discord <br />
+                        <a href="https://www.instagram.com/zelviaeh/"
+                            >Instagram</a
+                        >
+                    </p>
+                </div>
+                <div class="galleryImg" data-index="8">
+                    <img
+                        src="../media/Fawn_Commission.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>By bones6329 on Discord</p>
+                </div>
+                <div class="galleryImg" data-index="9">
+                    <img
+                        src="../media/fullpicture.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>
+                        By kido8897 on Discord<br /><a
+                            href="https://www.deviantart.com/fanartbr"
+                            >DeviantArt</a
+                        ><br /><a
+                            href="https://www.behance.net/tellesdemouraart"
+                            >Behance</a
+                        ><br />cyberwolfzine@gmail.com
+                    </p>
+                </div>
+                <div class="galleryImg" data-index="10">
+                    <img
+                        src="../media/unknown2.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>By bepoopie on Discord</p>
+                </div>
+                <div class="galleryImg" data-index="11">
+                    <img
+                        src="../media/2162.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>
+                        By lazybuns on Discord <br /><a
+                            href="https://www.instagram.com/lazybunsart"
+                            >Instagram</a
+                        ><br />
+                        <a href="https://ayebuns.carrd.co/#">Carrd.io</a>
+                        <br /><a href="https://twitter.com/Lazy1Buns"
+                            >Twitter</a
+                        >
+                    </p>
+                </div>
+                <div class="galleryImg" data-index="12">
+                    <img
+                        src="../../media/preview.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>
+                        By amy_mth on Discord <br />
+                        <a href="https://twitter.com/Amelia_osment">Twitter</a>
+                    </p>
+                </div>
+                <div class="galleryImg" data-index="13">
+                    <img
+                        src="../media/unknown3.png"
+                        width="70%"
+                        draggable="false" />
+                    <p>
+                        By marlonnn on Discord<br /><a
+                            href="https://twitter.com/sleepingmarlon2"
+                            >Twitter</a
+                        ><br /><a href="https://www.facebook.com/tngkbmarlon"
+                            >Facebook</a
+                        ><br /><a
+                            href="https://www.reddit.com/user/sleepingmarlons2"
+                            >Reddit</a
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            function nextImage() {
+            const nextButton = document.getElementById("nextButton");
+            let currentIndex = parseInt(nextButton.dataset.currentIndex || "1");
+
+            const currentElement = document.querySelector(`[data-index="${currentIndex}"]`);
+            const newElement = document.querySelector(`[data-index="${currentIndex + 1}"]`);
+
+            if (currentElement && newElement) {
+                currentElement.style.display = "none";
+                newElement.style.display = "block";
+                nextButton.dataset.currentIndex = (currentIndex + 1).toString();
+            }
+        }
+
+        var scene = document.getElementById("scene");
+        var parallaxInstance = new Parallax(scene);
+        AOS.init();
+        </script>
+    </body>
+</html>
