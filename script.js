@@ -12,30 +12,30 @@ async function switchTab(oldTab, newTab) {
     }, 260);
 }
 
-let image_array = [
-    "FxJ88g5XgAEuRCT.png",
-    "Gerudo_Link.png",
-    "IMG_2897.png",
-    "IMG_2912.png",
-    "Untitled_Artwork-28.png",
-    "Untitled_Artwork.png",
-    "Yshtola.png",
-];
+    // let image_array = [
+    //     "FxJ88g5XgAEuRCT.png",
+    //     "Gerudo_Link.png",
+    //     "IMG_2897.png",
+    //     "IMG_2912.png",
+    //     "Untitled_Artwork-28.png",
+    //     "Untitled_Artwork.png",
+    //     "Yshtola.png",
+    // ];
 
-function get_random_image() {
-    const random_index = Math.floor(Math.random() * image_array.length);
-    const selected_image = image_array[random_index];
-    document.getElementById(
-        "partnerHeader"
-    ).style.background = `url(media/partners/${selected_image})`;
-    document.getElementById("partnerHeader").style.backgroundRepeat =
-        "no-repeat";
-    document.getElementById("partnerHeader").style.backgroundSize = "cover";
-}
+    // function get_random_image() {
+    //     const random_index = Math.floor(Math.random() * image_array.length);
+    //     const selected_image = image_array[random_index];
+    //     document.getElementById(
+    //         "projectHeader"
+    //     ).style.background = `url(media/projects/${selected_image})`;
+    //     document.getElementById("projectHeader").style.backgroundRepeat =
+    //         "no-repeat";
+    //     document.getElementById("projectHeader").style.backgroundSize = "cover";
+    // }
 
-setInterval(() => {
-    get_random_image();
-}, 1000);
+    // setInterval(() => {
+    //     get_random_image();
+    // }, 1000);
 
 function fixWindow() {
     if (window.innerWidth < 768) {
